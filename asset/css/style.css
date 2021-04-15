@@ -1,0 +1,39 @@
+/* regola di reset margin padding box-sizing  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dbg {
+  color: white;
+}
+/* blocchi con colori  */
+#nav_site {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  width: calc(100% - 150px);
+  height: 80px;
+  text-align: right;
+  background-color: #333;
+}
+#aside_site {
+  background-color: black;
+  height: 100vh;
+  width: 150px;
+  position: relative;
+}
+#main_site {
+  position: absolute;
+  background-color: rgb(19, 19, 58);
+  top: 80px;
+  left: 150px;
+}
+#footer_site {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(22, 190, 50);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
