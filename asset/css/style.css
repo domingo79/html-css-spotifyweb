@@ -5,7 +5,7 @@
 }
 .dbg {
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 /* common rules  */
 ul {
@@ -38,7 +38,6 @@ main {
   width: calc(100% - 200px);
   background-color: #141922;
   overflow: auto;
-
 }
 /* footer ricavato per differenza di altezza della main e nav  */
 footer {
@@ -58,21 +57,26 @@ footer {
   text-align: left;
   margin-left: 10px;
 }
+
 .logo img {
   height: 35px;
-  margin: 15px 5px;
+  margin: 15px 0;
   padding: 0 5px;
 }
 .menu_pulsanti img {
-  height: 30px;
+  height: 25px;
   margin: 0 5px;
 }
 .menu_pulsanti li > a {
-  vertical-align: super;
   font-weight: 700;
   font-size: 0.8rem;
+  color: darkgray;
 }
-
+.menu_pulsanti ul li a:hover {
+  color: #fff;
+  border-left: 2px solid #adff2f;
+  transition: 0.5s;
+}
 .playlist_utente {
   padding-top: 30px;
   margin: 0 5px;
@@ -81,6 +85,10 @@ footer {
   text-transform: uppercase;
   font-size: 0.9rem;
   margin: 10px 0;
+}
+.playlist_utente a:hover {
+  color: #fff;
+  transition: 0.5s;
 }
 .fa-plus {
   background-color: white;
@@ -102,37 +110,142 @@ footer {
   font-size: 0.8rem;
   font-weight: 700;
 }
-
+.profilo_utente ul li a:hover {
+  color: #fff;
+}
+.profilo_utente ul li:first-of-type {
+  border-bottom: 1px solid #fff;
+  width: 70%;
+}
+.profilo_utente ul li {
+  padding: 10px 0;
+}
+.profilo_utente a {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.profilo_utente img {
+  height: 15px;
+  vertical-align: bottom;
+}
+.profilo_avatar {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #fff;
+}
+.profilo_avatar img {
+  height: 20px;
+  background-color: lightslategray;
+  border-radius: 50%;
+  margin-right: 5px;
+}
 /* sezione della main colonna destra */
 .barra_pulsante {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
   height: 70px;
   background-color: #080b12;
-  text-align: right;
+  padding-right: 20px;
+}
+.barra_pulsante a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.barra_pulsante a:hover {
+  transform: scale(1.1);
+  transition: ease 0.5s;
 }
 .menu_principale {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.menu_principale > ul li {
+  display: inline;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 10px;
+}
+.menu_principale > ul li:hover a {
+  border-bottom: 2px solid #adff2f;
+  color: #fff;
+  transition: 0.5s;
 }
 .container {
   width: 100%;
   margin: 0 auto;
 }
-/* le righe della main  */
-.row_recenti {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-}
-
-.item {
-  width: 170px;
-  height: 150px;
-  margin: 5px;
-}
-.item img {
-  height: 100%;
+/* regoli comuni per le card e row  */
+.row {
   width: 100%;
-  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  width: 180px;
+  height: 250px;
+  margin: 5px;
+  text-align: center;
+}
+.card_img {
+  position: relative;
+}
+.card_img img {
+  width: 180px;
+  height: 170px;
+}
+.card_img h4 {
+  padding: 10px 0;
+}
+.card_img h6 {
+  color: darkgrey;
+}
+/* album recenti creati suggeriti regole specifiche  */
+.album_recenti h2 {
+  margin-left: 10px;
+  padding: 20px 0;
+}
+.album_creati h2 {
+  margin-left: 10px;
+  padding-top: 30px;
+}
+.album_creati h6,
+.album_popolari h6 {
+  margin-left: 10px;
+  color: darkgray;
+  padding: 10px 0;
+}
+.album_popolari h2 {
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+.album_popolari img {
+  border-radius: 50%;
+}
+/* player degli album  */
+.fa-play {
+  position: absolute;
+  padding: 15px;
+  border: 3px solid white;
+  border-radius: 50%;
+  top: 10%;
+  left: 20%;
+  transform: translate(46%, 50%);
+  color: #fff;
+  display: none;
+}
+.card_img:hover i {
+  display: block;
+  transition: ease-in 0.5s;
 }
 
 /* prova footer  */

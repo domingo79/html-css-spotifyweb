@@ -1,144 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- font  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-    />
-    <!-- fogli di style  -->
-    <link rel="stylesheet" href="./asset/css/style.css" />
-    <!-- media -->
-    <link rel="stylesheet" href="./asset/css/@media.css" />
-    <title>Spotify Web</title>
-  </head>
-  <body class="dbg">
-    <!-- wrapper per la struttura dividendo nav e main -->
-    <div id="wrapper">
-      <!-- nav di sinistra fissa  -->
-      <nav>
-        <div class="nav_d_flex">
-          <div class="menu">
-            <div class="logo">
-              <img src="./asset/img/logo.svg" alt="logo spotify" />
-            </div>
-            <div class="menu_pulsanti">
-              <ul>
-                <li>
-                  <img
-                    src="./asset/img/home.svg"
-                    alt="casetta per la home page"
-                  />
-                  <a href="#"> Home </a>
-                </li>
-                <li>
-                  <img
-                    src="./asset/img/search.svg"
-                    alt="casetta per la home page"
-                  />
-                  <a href="#"> Cerca</a>
-                </li>
-                <li>
-                  <img
-                    src="./asset/img/libreria.svg"
-                    alt="casetta per la home page"
-                  />
-                  <a href="#"> La Tua Libreria</a>
-                </li>
-              </ul>
-            </div>
-            <div class="playlist_utente">
-              <h6>playlist</h6>
-              <a href="#"><i class="fa fa-plus"></i>Crea PlayList</a>
-              <ul>
-                <li>
-                  <a href="#">Nome Playlist</a>
-                </li>
-                <li>
-                  <a href="#">Nome Playlist</a>
-                </li>
-                <li>
-                  <a href="#">Nome Playlist</a>
-                </li>
-                <li>
-                  <a href="#">Nome Playlist</a>
-                </li>
-                <li>
-                  <a href="#">Nome Playlist</a>
-                </li>
-                <li>
-                  <a href="#">Nome Playlist</a>
-                </li>
-                <li>
-                  <a href="#">Nome Playlist</a>
-                </li>
-              </ul>
-            </div>
-          </div>
 
-          <div class="profilo_utente">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <!-- fogli di style  -->
+  <link rel="stylesheet" href="./asset/css/style.css" />
+  <!-- media -->
+  <link rel="stylesheet" href="./asset/css/@media.css" />
+  <title>Spotify Web</title>
+</head>
+
+<body class="dbg">
+  <!-- wrapper per la struttura dividendo nav e main -->
+  <div id="wrapper">
+    <!-- nav di sinistra fissa  -->
+    <nav>
+      <div class="nav_d_flex">
+        <div class="menu">
+          <div class="logo">
+            <img src="./asset/img/logo.svg" alt="logo spotify" />
+          </div>
+          <div class="menu_pulsanti">
+            <ul>
+              <li>
+
+                <a href="#"><img src="./asset/img/home.svg" alt="casetta per la home page" /> Home </a>
+              </li>
+              <li>
+
+                <a href="#"><img src="./asset/img/search.svg" alt="casetta per la home page" /> Cerca</a>
+              </li>
+              <li>
+
+                <a href="#"><img src="./asset/img/libreria.svg" alt="casetta per la home page" /> La Tua Libreria</a>
+              </li>
+            </ul>
+          </div>
+          <div class="playlist_utente">
+            <h6>playlist</h6>
+            <a href="#"><i class="fa fa-plus"></i>Crea PlayList</a>
+            <ul>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-      <!-- corpo della main colonna destra -->
-      <main>
 
-        <div class="container">
-          <!-- barra vuota con unico bottone -->
-          <div class="barra_pulsante">qui il bottone
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus corporis mollitia animi aut odio ducimus saepe. Expedita porro magnam est!
-          </div>
-          <!-- barra dei link/menu della main  -->
-          <div class="menu_principale">useremo una ul list a per i menu</div>
-          <!-- le righe della main  -->
-          <div class="row_recenti">
-            <div class="item">
-              <img src="./asset/img/metal_lifting.jpg" alt="" />
-            </div>
-            <div class="item">
-              <img src="./asset/img/stranger.jpeg" alt="" />
-            </div>
-            <div class="item">
-              <img src="./asset/img/aquietplace.jpeg" alt="" />
-            </div>
-            <div class="item">
-              <img src="./asset/img/split.jpeg" alt="" />
-            </div>
-            <div class="item">
-              <img src="./asset/img/cure.jpeg" alt="" />
-            </div>
-            <div class="item">
-              <img src="./asset/img/sinister.jpeg" alt="" />
-            </div>
-          </div>
-          <div class="row_creato"></div>
-          <div class="row_ArtPopolari"></div>
+        <div class="profilo_utente">
+          <ul>
+            <li>
+              <a href="#"> <img src="./asset/img/download.svg" alt="">
+                Installa app
+              </a>
+            </li>
+            <li>
+              <a class="profilo_avatar" href="#"><img src="./asset/img/profile.svg" alt="">
+                John Doe
+              </a>
+            </li>
+          </ul>
         </div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur sequi magni velit pariatur laboriosam atque dolorum labore libero illum error, totam in porro perferendis alias incidunt earum ducimus adipisci ratione culpa quas rem! Quam quaerat fugit ullam voluptates cum molestias eligendi dicta nobis corrupti architecto impedit asperiores placeat, et adipisci. Suscipit veritatis reprehenderit autem eligendi possimus voluptatem nisi, minus accusamus numquam libero provident sequi deleniti corporis laudantium nulla impedit molestias facere id facilis beatae vel amet officia iste qui. Omnis, doloremque. Sequi, sit! Obcaecati, eius iusto libero rem sit voluptas temporibus excepturi aspernatur ducimus eos molestiae quasi repudiandae delectus, nulla odit incidunt minima enim voluptates nisi velit perspiciatis reprehenderit alias. Nulla harum reprehenderit facere modi, corporis delectus ducimus sint quos eligendi porro. Voluptas nihil itaque saepe excepturi ipsam sit, provident, quod animi commodi libero dolores aliquam, corporis explicabo repudiandae molestias asperiores. Est cum assumenda laboriosam obcaecati, fuga aliquid odit reprehenderit excepturi reiciendis quidem animi suscipit libero quas ipsa repudiandae, enim vero soluta, rerum maxime illo dolorem? Deserunt magnam esse doloribus id tempora minima mollitia corporis distinctio autem alias accusamus similique iste omnis quam reiciendis voluptatibus soluta debitis inventore hic quibusdam, suscipit voluptate iure explicabo. Ullam, commodi! Itaque rem, inventore officiis et laudantium veritatis? Cum consectetur dicta molestias ullam omnis dolores esse sit error expedita veritatis tempora delectus deleniti saepe aut culpa rem tempore aperiam velit, cumque voluptates iure! Fugiat illo ducimus sunt exercitationem iusto magni, quas, eveniet modi delectus ullam expedita. Sed explicabo sunt id tempora laudantium eligendi a odit totam, cupiditate est vitae quis fuga quas consectetur accusamus dignissimos iste reiciendis molestiae voluptatum aut voluptates? Eius consequatur quasi quam iste voluptatem velit aperiam tempore, unde alias nobis deserunt quibusdam nihil dolorem veritatis. Sed voluptatem placeat, aspernatur qui consequatur perferendis dignissimos enim vero necessitatibus nisi fugiat laudantium alias animi, voluptatum eum ducimus, repudiandae esse. Neque voluptas delectus hic cupiditate omnis eaque? Commodi molestias mollitia fuga beatae reiciendis, veniam quod maxime nostrum quo labore vel ut facilis aperiam repellendus laboriosam vitae praesentium saepe. Odio nisi minima distinctio recusandae harum magnam, repellat voluptas commodi! Unde sequi repellendus pariatur recusandae voluptatibus tempora quis eaque quod labore. Fuga laborum tempora expedita voluptates totam ratione, nihil quis reiciendis recusandae ea pariatur laudantium placeat modi architecto? Quae, nemo nam dolorum incidunt qui laudantium aliquid consequuntur suscipit. Enim expedita, vel, repellendus et earum excepturi maiores quidem, inventore nobis est odio molestias rerum aliquam reiciendis magni laboriosam!
-        Lorem ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae odio amet fugiat alias maiores, illum veritatis recusandae exercitationem quae a iusto officia harum. Ut laboriosam amet voluptatum corrupti ad minus omnis, earum est, explicabo quos aperiam non harum odio suscipit, debitis iusto cum reprehenderit ipsa. Nobis quasi soluta culpa aliquid corporis incidunt ad rerum possimus nemo. Facilis laudantium officia asperiores architecto nemo fugit voluptatem. Officiis error molestiae explicabo eius ut nesciunt iusto fuga mollitia libero, incidunt sapiente earum sint provident molestias facere aut rem dignissimos. Dignissimos tenetur delectus aut eveniet, doloremque nulla hic quod earum omnis, velit explicabo maiores officia praesentium! Qui ipsum ad quis temporibus maxime eveniet dolorem impedit illum porro quod? Praesentium cum corrupti quibusdam quam ullam vel adipisci consectetur quas dolore officia perspiciatis saepe laboriosam odit accusantium assumenda tenetur quaerat repudiandae ducimus beatae, vero molestias ipsam illum excepturi voluptate. Nostrum placeat natus porro voluptatibus quia eaque corporis minima, similique fuga sed commodi animi illo debitis illum, harum aperiam repellendus iusto quas quos. Repellat vel animi quasi, aperiam nesciunt id error a cumque eum sit culpa quo odit temporibus nam consectetur aut aspernatur omnis eaque, inventore nostrum debitis ad. Totam fugiat atque officiis. Quia voluptas autem cumque saepe! dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam non deserunt nostrum, iste excepturi nam dolor porro quis vel doloremque, esse blanditiis labore. Voluptate pariatur labore nobis officia, ad, itaque neque consectetur nemo a quas dolorum. Porro maxime veritatis cum impedit eveniet non, facilis debitis harum voluptatum sequi quos voluptatem laboriosam. Et fugit reiciendis mollitia quidem quod odio expedita sed sint quae quaerat, quibusdam cupiditate dolor atque praesentium neque natus laborum nulla voluptates corporis vitae, doloremque, voluptate alias accusantium necessitatibus. Velit fuga dolorum porro maiores suscipit voluptas? Ullam, alias quibusdam tenetur optio ut voluptates rem provident suscipit vel quam. Iure omnis impedit beatae ratione, quasi ipsa animi eaque asperiores itaque dolor explicabo dolorem saepe fugit, magnam expedita, corporis ab quibusdam. Eos non ea soluta, dolores possimus blanditiis aliquam, ex quae aspernatur, cum doloribus iste! Voluptatem, quod id sunt laborum tempora eius voluptatum maxime atque eos ullam cupiditate fugit esse alias amet fugiat at ipsum nostrum praesentium aut rem animi modi aperiam ipsam minus! Dolorem ipsam veritatis delectus quia quod sapiente minus? Suscipit atque excepturi qui, doloremque natus aut itaque perferendis, facere sint veritatis aperiam? Quasi voluptates molestiae mollitia repudiandae quidem ducimus alias dolore perferendis incidunt porro corporis cum, aut in, dolores, optio tempore autem exercitationem? Error, eaque eos! Ipsum nam adipisci quam deserunt at officia, praesentium et vitae explicabo, maxime libero dignissimos quae. Commodi doloribus reiciendis repellat voluptatem saepe fugit inventore laudantium debitis ipsa! Distinctio quo consequuntur ab libero architecto natus aspernatur itaque expedita, corrupti optio quis id est? Dolor inventore reiciendis ea doloremque aliquam tenetur autem quidem amet illo perferendis blanditiis ipsum nulla debitis nostrum sint reprehenderit sed exercitationem, aut laborum impedit, nemo deserunt vel. Sint rem, asperiores expedita, dolor ad vitae eligendi odit maiores, perferendis recusandae atque soluta reiciendis ipsum vero a corrupti. Voluptatum illo iste quaerat ipsam! adipisicing elit. Distinctio explicabo rem, a omnis, assumenda fugiat nesciunt doloremque est expedita accusamus culpa, quisquam error libero quia? Culpa qui repellendus quas blanditiis molestias, dolore enim hic quod, quidem ullam ea quia vero! Provident obcaecati, et nam, dolor dicta quo culpa enim possimus nulla blanditiis earum, libero harum architecto eaque sapiente. Aut nesciunt, dolorem cum quibusdam deserunt officia, reiciendis asperiores molestias consectetur quia alias eveniet, nulla necessitatibus qui laboriosam voluptas dolores sunt. Reprehenderit impedit totam rerum cum incidunt inventore placeat natus aspernatur at, voluptatum sequi quasi veniam perspiciatis odio dolor aliquam veritatis, illum animi hic recusandae suscipit repellat debitis. Quaerat officia cum tempore consectetur, minus est corrupti deleniti, iure, nostrum soluta sapiente quibusdam minima rem! Quis optio quisquam possimus doloremque fugiat. Impedit molestias at optio repellendus, dignissimos placeat recusandae tenetur. Soluta, optio repellendus libero sed repellat assumenda saepe aperiam ea quis minus molestias quam in ipsa dolores totam aliquid! Repellat sint doloribus voluptas minus ex cumque officiis, rerum consequuntur, ut in deleniti nam corporis inventore adipisci consectetur porro, esse amet est dolores aut odit itaque facilis earum corrupti. Laboriosam voluptatibus quos quod, debitis libero ab iste eaque sequi assumenda tempore sit error adipisci eum distinctio, corrupti animi vel nemo rem voluptates iusto ut maxime natus ea. Non fugiat aliquam beatae incidunt repudiandae odio dicta, est animi fugit soluta quibusdam ipsum sapiente ea magnam nulla eum totam debitis quasi rerum sit qui, commodi vero quia dolorem? Eaque corrupti earum ab ipsam, incidunt consectetur, sit cumque, minus iste fuga doloribus laborum! Deleniti quod earum, error quis ipsam amet, vitae corporis delectus incidunt culpa unde consequatur quisquam exercitationem eum fugiat, consectetur nihil repellat cupiditate nemo quasi ullam nobis eveniet! Sunt architecto aut aspernatur repellat veniam illum nostrum officia impedit quos ullam, molestiae quas dicta eligendi reiciendis ex, porro saepe fugiat, cumque assumenda sequi harum reprehenderit. Expedita maxime consequatur perferendis itaque explicabo, inventore maiores debitis ex incidunt saepe animi sequi illo est ratione corporis! Ea quia praesentium inventore voluptatem mollitia in commodi quaerat eos aspernatur dolorum non exercitationem deserunt dolore ad, assumenda blanditiis ut doloribus at nisi beatae, dolor aliquam. Libero tenetur asperiores a vero at tempore rem aliquam cum tempora omnis temporibus architecto ut voluptatem voluptas aspernatur, repellendus, distinctio in ex delectus nesciunt itaque dolore eos saepe! Quas dolor fugiat quidem perspiciatis minima voluptatem aut reprehenderit qui! Sit adipisci vitae sequi voluptates dignissimos suscipit incidunt enim?
-      </main>
-      <!-- footer con i controlli -->
-      <footer>
-        <div class="mixer">
-          <div class="album">album</div>
-          <div class="controller">controlli</div>
-          <div class="volume">volume</div>
-        </div>
-      </footer>
-    </div>
-    <!-- ///wrapper per la struttura dividendo nav e main -->
 
-    </div>
-  </body>
+      </div>
+    </nav>
+    <!-- corpo della main colonna destra -->
+    <main>
+
+      <div class="container">
+        <!-- barra vuota con unico bottone -->
+        <div class="barra_pulsante">
+          <a href="#">EFFETTUA L'APPGRADE</a>
+        </div>
+        <!-- barra dei link/menu della main  -->
+        <div class="menu_principale">
+          <ul>
+            <li>
+              <a href="#">IN EVIDENZA</a>
+            </li>
+            <li>
+              <a href="#">PODCAST</a>
+            </li>
+            <li>
+              <a href="#">CLASSIFICHE</a>
+            </li>
+            <li>
+              <a href="#">GENERI E MOOD</a>
+            </li>
+            <li>
+              <a href="#">NUOVE USCITE</a>
+            </li>
+            <li>
+              <a href="#">SCOPRI</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- le righe della main  -->
+        <div class="album_recenti">
+
+          <h2>Recently player</h2>
+          <div class="row">
+            <div class="card">
+              <div class="card_img">
+                <a href="#"> <img src="./asset/img/metal_lifting.jpg" alt="" /></a>
+                <h4>Heavy Metal</h4>
+                <h6>Subtitle</h6>
+                <i class="fa fa-play"></i>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <a href="#"> <img src="./asset/img/stranger.jpeg" alt="" /></a>
+                <h4>Stranger Thing, Vol.1 (a Netflix Original Series Soundtrack)</h4>
+                <h6>Kyle Dixon & Michael Stein</h6>
+                <i class="fa fa-play"></i>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <a href="#"> <img src="./asset/img/aquietplace.jpeg" alt="" /></a>
+                <h4>A quiet place</h4>
+                <h6>Subtitle</h6>
+                <i class="fa fa-play"></i>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <a href="#"> <img src="./asset/img/split.jpeg" alt="" /></a>
+                <h4>Split</h4>
+                <h6>Subtitle</h6>
+                <i class="fa fa-play"></i>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <a href="#"> <img src="./asset/img/cure.jpeg" alt="" /></a>
+                <h4>A cure for Wellness</h4>
+                <h6>Subtitle</h6>
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <a href="#"> <img src="./asset/img/sinister.jpeg" alt="" /></a>
+                <h4>Sinister</h4>
+                <h6>Subtitle</h6>
+                <i class="fa fa-play"></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="album_creati">
+          <h2>Creato per John Doe</h2>
+          <h6>Più ascolti, più saranno accurati i suggerimenti.</h6>
+          <div class="row">
+            <div class="card">
+              <div class="card_img">
+                <a href="#"> <img src="./asset/img/radar.jpeg" alt="" /></a>
+                <h4>Release Radar</h4>
+                <i class="fa fa-play"></i>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <a href="#"> <img src="./asset/img/mixdaily.jpeg" alt="" /></a>
+                <h4>Daily Mix 1</h4>
+                <i class="fa fa-play"></i>
+
+              </div>
+            </div>
+          </div>
+          <div class="album_popolari"></div>
+        </div>
+        <div class="album_popolari">
+          <h2>Creato per John Doe</h2>
+          <h6>Più ascolti, più saranno accurati i suggerimenti.</h6>
+          <div class="row">
+            <div class="card">
+              <div class="card_img">
+                <a href="#"> <img src="./asset/img/youg.jpeg" alt="" /></a>
+                <h4>Release Radar</h4>
+                <i class="fa fa-play"></i>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <a href="#"> <img src="./asset/img/player_left.jpg" alt="" /></a>
+                <h4>Daily Mix 1</h4>
+                <i class="fa fa-play"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+    </main>
+    <!-- footer con i controlli -->
+    <footer>
+      <div class="mixer">
+        <div class="album">album</div>
+        <div class="controller">controlli</div>
+        <div class="volume">volume</div>
+      </div>
+    </footer>
+  </div>
+  <!-- ///wrapper per la struttura dividendo nav e main -->
+  </div>
+
+  </div>
+</body>
+
 </html>
