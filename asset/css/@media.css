@@ -1,0 +1,23 @@
+/* dispositivi xs max 575px */
+@media screen and (max-width: 575px) {
+  nav {
+    max-width: 70px;
+    height: calc(100% - 70px);
+  }
+  .nav_d_flex {
+    width: 60px;
+    margin: 0 auto;
+  }
+}
+
+/* dispositivi s tablet min 576 a max 767 */
+/* dispositivi md laptop min 768 a max 991 */
+/* dispositivi l laptop L min 992 a max 1199 */
+/* dispositivi xl 4k xL min 1200 a max.. */
+@media screen and (min-width: 1200px) {
+  .item {
+    width: calc(100% / 6 - 10px);
+    height: 150px;
+    margin: 5px;
+  }
+}

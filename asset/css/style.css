@@ -1,27 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .dbg {
   color: white;
-  background-color: #000;
+  font-family: "Montserrat", sans-serif;
 }
-/* blocchi con colori  */
-#aside_site {
-  background-color: #000;
+/* common rules  */
+ul {
+  list-style: none;
+}
+a {
+  color: #7d7f84;
+  text-decoration: none;
+}
+/* SCHELETRO DELLA PAGINA CON IL MIO CONTENITORE WRAPPER>> NAV / MAIN & FOOTER  */
+/* contenitore di tutta la struttura  */
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
   height: 100vh;
-  width: 150px;
-}
-#nav_top {
-  height: 70px;
   width: 100%;
-  background-color: #080b12;
+  /* overflow: hidden; */
 }
-#main_site {
-  width: 100%;
+/* nav di sinistra contenitorizzata a sinistra */
+nav {
+  float: left;
+  height: calc(100% - 70px);
+  width: 200px;
+  background-color: #000;
+}
+/* main contenitorizzata a destra */
+main {
+  float: left;
+  height: calc(100% - 70px);
+  width: calc(100% - 200px);
   background-color: #141922;
+  overflow: auto;
+
 }
-#footer_site {
+/* footer ricavato per differenza di altezza della main e nav  */
+footer {
   height: 70px;
-  width: calc(100% - 15px);
+  width: 100%;
   background-color: #282828;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+}
+/* codice per le sezioni di qui in poi  */
+/* display flex column per nav sinistra  */
+.nav_d_flex {
+  display: flex;
+  flex-flow: column;
+  overflow: auto;
+  height: 100%;
+  width: 200px;
+  justify-content: space-between;
+  text-align: left;
+  margin-left: 10px;
+}
+.logo img {
+  height: 35px;
+  margin: 15px 5px;
+  padding: 0 5px;
+}
+.menu_pulsanti img {
+  height: 30px;
+  margin: 0 5px;
+}
+.menu_pulsanti li > a {
+  vertical-align: super;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.playlist_utente {
+  padding-top: 30px;
+  margin: 0 5px;
+}
+.playlist_utente h6 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+.fa-plus {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  color: black;
+  vertical-align: middle;
+  line-height: 30px;
+  text-align: center;
+  opacity: 0.8;
+  margin-right: 10px;
+}
+.playlist_utente > a {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.playlist_utente ul li {
+  margin: 10px 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* sezione della main colonna destra */
+.barra_pulsante {
+  width: 100%;
+  height: 70px;
+  background-color: #080b12;
+  text-align: right;
+}
+.menu_principale {
+  text-align: center;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+/* le righe della main  */
+.row_recenti {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.item {
+  width: 170px;
+  height: 150px;
+  margin: 5px;
+}
+.item img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+/* prova footer  */
+.mixer {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
