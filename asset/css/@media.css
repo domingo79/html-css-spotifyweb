@@ -5,12 +5,31 @@
     height: calc(100% - 70px);
   }
   .nav_d_flex {
-    width: 60px;
+    width: 70px;
     margin: 0 auto;
   }
-}
+  main {
+    float: left;
+    height: calc(100% - 70px);
+    width: calc(100% - 70px);
+  }
+  .row {
+    /* width: calc(100% - 70px); */
+    justify-content: center;
+  }
+  .menu, .profilo_utente
+  {
+  display: none;
+  }
+  .icone img
+  {
+    display: block;  
+  }
 
+}
 /* dispositivi s tablet min 576 a max 767 */
+@media screen and (max-width: 767) {
+}
 /* dispositivi md laptop min 768 a max 991 */
 /* dispositivi l laptop L min 992 a max 1199 */
 /* dispositivi xl 4k xL min 1200 a max.. */

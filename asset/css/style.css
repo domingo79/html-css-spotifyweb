@@ -139,6 +139,32 @@ footer {
   border-radius: 50%;
   margin-right: 5px;
 }
+/* icone nascoste */
+.icone
+{
+  display: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.icone img {
+  display: none;
+  height: 30px;
+  margin: 5px 0;
+}
+#xs_download
+{
+  height: 18px;
+  margin-left: 5px;
+}
+.xs_img
+{
+  display: none;
+  background-color: lightslategray;
+  border-radius: 50%;
+}
 /* sezione della main colonna destra */
 .barra_pulsante {
   display: flex;
@@ -191,7 +217,7 @@ footer {
   flex-wrap: wrap;
 }
 .card {
-  width: 180px;
+  width: 170px;
   height: 250px;
   margin: 5px;
   text-align: center;
@@ -200,7 +226,7 @@ footer {
   position: relative;
 }
 .card_img img {
-  width: 180px;
+  width: 170px;
   height: 170px;
 }
 .card_img h4 {
@@ -248,10 +274,38 @@ footer {
   transition: ease-in 0.5s;
 }
 
-/* prova footer  */
+/* footer ************ */
 .mixer {
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+.album{
+  text-align: left;
+  flex-grow: 1;
+  border: 1px solid #adff2f;
+}
+.controller{
+  text-align: center;
+  flex-grow: 2;
+  border: 1px solid #adff2f;
+}
+.volume{
+  text-align: right;
+  flex-grow: 1;
+  border: 1px solid #adff2f;
+}
+/* colonna destra .mixer */
+.copertina{
+  border: 1px solid red;
+  flex-grow: 1;
+}
+.titoli_copertina{
+  border: 1px solid rgb(132, 0, 255);
+  flex-grow: 2;
+}
+.likes{
+  border: 1px solid rgb(51, 255, 0);
+  flex-grow: 1;
 }

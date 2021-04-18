@@ -13,10 +13,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
+  <link rel="shortcut icon" href="./asset/img/favicon.ico" type="image/x-icon">
   <!-- fogli di style  -->
   <link rel="stylesheet" href="./asset/css/style.css" />
   <!-- media -->
   <link rel="stylesheet" href="./asset/css/@media.css" />
+
   <title>Spotify Web</title>
 </head>
 
@@ -74,7 +76,32 @@
             </ul>
           </div>
         </div>
+        <!-- icone nascoste -->
+        <div class="icone">
+          <ul>
+            <li>
+              <img src="./asset/img/logo-small.svg" alt="">
+            </li>
+            <li>
+              <img src="./asset/img/home.svg" alt="">
+            </li>
+            <li>
+              <img src="./asset/img/search.svg" alt="">
+            </li>
+            <li>
+              <img src="asset/img/libreria.svg" alt="">
+            </li>
+          </ul>
 
+          <ul>
+            <li>
+              <img id="xs_download" src="./asset/img/download.svg" alt="">
+            </li>
+            <li>
+              <img class="xs_img" src="./asset/img/profile.svg" alt="">
+            </li>
+          </ul>
+        </div>
         <div class="profilo_utente">
           <ul>
             <li>
@@ -89,7 +116,6 @@
             </li>
           </ul>
         </div>
-
       </div>
     </nav>
     <!-- corpo della main colonna destra -->
@@ -229,16 +255,17 @@
             </div>
           </div>
         </div>
-
-
-
-
-
     </main>
     <!-- footer con i controlli -->
     <footer>
       <div class="mixer">
-        <div class="album">album</div>
+        <div class="album">
+          <div class="row">
+            <div class="copertina">immagine</div>
+            <div class="titoli_copertina">titoli Lorem ipsum dolor sit amet.</div>
+            <div class="likes">icone</div>
+          </div>
+        </div>
         <div class="controller">controlli</div>
         <div class="volume">volume</div>
       </div>
@@ -247,7 +274,6 @@
   <!-- ///wrapper per la struttura dividendo nav e main -->
   </div>
 
-  </div>
 </body>
 
 </html>
