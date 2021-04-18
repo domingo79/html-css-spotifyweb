@@ -25,10 +25,15 @@
   {
     display: block;  
   }
+  .likes
+  {
+    flex-direction: column;
+  }
+
 
 }
 /* dispositivi s tablet min 576 a max 767 */
-@media screen and (max-width: 767) {
+@media screen and (min-width: 767) {
 }
 /* dispositivi md laptop min 768 a max 991 */
 /* dispositivi l laptop L min 992 a max 1199 */
