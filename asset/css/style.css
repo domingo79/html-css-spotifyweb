@@ -38,7 +38,7 @@ main {
   width: calc(100% - 200px);
   background-color: #141922;
   overflow: auto;
-}
+} 
 /* footer ricavato per differenza di altezza della main e nav  */
 footer {
   height: 70px;
@@ -187,18 +187,19 @@ footer {
   transform: scale(1.1);
   transition: ease 0.5s;
 }
-.menu_principale {
+.menu_principale 
+{
   display: flex;
-  flex-direction: row;
+  width: 100%;
   justify-content: center;
   align-items: center;
   padding: 15px;
 }
-.menu_principale > ul li {
+.menu_principale > ul li 
+{
   display: inline;
   font-size: 0.9rem;
   font-weight: 700;
-  margin: 10px;
 }
 .menu_principale > ul li:hover a {
   border-bottom: 2px solid #adff2f;
@@ -356,7 +357,7 @@ footer {
 {
   font-size: 0.7rem;
 }
-.p_bar
+.bar_progress
 {
   position: relative;
   background-color: #1a1a1a;
@@ -367,7 +368,7 @@ footer {
   box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
   margin: 0 20px;
 }
-.p_bar > span
+.bar_progress:hover > span
 {
   position: absolute;
   height: 3px;
@@ -375,23 +376,32 @@ footer {
   border-radius: 3px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
   background: #ADFF2F;
-  animation: width .5s ease-in-out;
+  animation: track .5s ease-in;
+
 }
-@keyframes width 
+.bar_progress:hover > span::after
+{
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: calc(100% - 5px);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ADFF2F;
+}
+@keyframes  track
 {
   0%
   {
   width: 0%;
-  }
-  50%
-  {
-  width: 10%;
   }
   100%
   {
   width: 25%;
   }
 }
+
 /* colonna destra mixer  */
 .volume
 {
@@ -420,7 +430,7 @@ footer {
   box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
   margin: 0 2px;
 }
-.vol_bar > span
+.vol_bar:hover > span
 {
   position: absolute;
   height: 3px;
@@ -428,17 +438,24 @@ footer {
   border-radius: 3px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
   background: #ADFF2F;
-  animation: vol .5s ease-in-out;
+  animation: vol .5s ease-in;
+}
+.vol_bar:hover > span::after
+{
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: calc(100% - 5px);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ADFF2F;
 }
 @keyframes vol 
 {
   0%
   {
   width: 0%;
-  }
-  50%
-  {
-  width: 10%;
   }
   100%
   {
