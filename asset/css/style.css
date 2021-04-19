@@ -187,6 +187,7 @@ footer {
   transform: scale(1.1);
   transition: ease 0.5s;
 }
+/* menu in alto nella main  */
 .menu_principale 
 {
   display: flex;
@@ -210,7 +211,7 @@ footer {
   width: 100%;
   margin: 0 auto;
 }
-/* regoli comuni per le card e row  */
+/* regole comuni per le card e row  */
 .row {
   width: 100%;
   display: flex;

@@ -29,11 +29,13 @@
   {
     flex-direction: column;
   }
-  .vol_bar
+  .controller a 
   {
-    display: none;
+    margin: 0 15px;
   }
-
+  .volume a {
+    margin: 0px 5px;
+  }
 }
 /* dispositivi s tablet min 576 a max 767 */
 
