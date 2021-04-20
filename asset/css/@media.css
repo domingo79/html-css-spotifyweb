@@ -17,7 +17,7 @@
     /* width: calc(100% - 70px); */
     justify-content: center;
   }
-  .menu, .profilo_utente
+  .logo, .menu_pulsanti, .playlist_utente, .profilo_utente 
   {
   display: none;
   }
@@ -25,19 +25,62 @@
   {
     display: block;  
   }
-  .likes
+  .titoli_copertina, .likes
   {
-    flex-direction: column;
+    /* flex-direction: column; */
+    display: none;
+  }
+  .vol_bar{
+    display: none;
   }
   .controller a 
   {
     margin: 0 15px;
   }
   .volume a {
-    margin: 0px 5px;
+    margin: 0px 2px;
   }
 }
 /* dispositivi s tablet min 576 a max 767 */
+@media screen and (max-width:767px) {
+  .likes
+  {
+    flex-direction: column;
+    margin: 2px;
+  }
+  .vol_bar
+  {
+    display: none;
+  }
+  .copertina img ,.titoli_copertina, .likes
+  {
+    margin: 3px;
+  }
+  .likes> a > i
+  {
+    font-size: 10px;
+  }
+  .controller a 
+  {
+    margin: 0 20px;
+  }
+  .volume a
+  {
+    margin: 0px 3px;
+  }
+  .volume a > i
+  {
+    font-size: 12px;
+  }
+
+}
+/* nasconde barra log-in per altezze al disotto di 467px */
+@media screen and (max-height: 467px){
+  .barra_pulsante
+  {
+    display: none;
+  }
+}
 
 
 /* dispositivi md laptop min 768 a max 991 */

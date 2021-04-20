@@ -22,7 +22,7 @@ a {
   flex-wrap: wrap;
   height: 100vh;
   width: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 /* nav di sinistra contenitorizzata a sinistra */
 nav {
@@ -30,6 +30,7 @@ nav {
   height: calc(100% - 70px);
   width: 200px;
   background-color: #000;
+  overflow: hidden;
 }
 /* main contenitorizzata a destra */
 main {
@@ -299,8 +300,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  flex-grow: 1;
-  flex-shrink: 1;
 }
 .copertina img
 {
@@ -380,18 +379,17 @@ footer {
   box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
   margin: 0 20px;
 }
-.bar_progress:hover > span
+.bar_progress/*:hover*/ > span
 {
   position: absolute;
   height: 3px;
   width: 25%;
   border-radius: 3px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
-  background: #ADFF2F;
-  animation: track .5s ease-in;
-
+  background: #7d7f84;
+  /* animation: track .5s ease-in; */
 }
-.bar_progress:hover > span::after
+/* .bar_progress:hover > span::after
 {
   content: '';
   position: absolute;
@@ -412,7 +410,7 @@ footer {
   {
   width: 25%;
   }
-}
+} */
 
 /* colonna destra mixer  */
 .volume
@@ -442,17 +440,18 @@ footer {
   box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
   margin: 0 2px;
 }
-.vol_bar:hover > span
+.vol_bar/*:hover*/ > span
 {
   position: absolute;
   height: 3px;
   width: 25%;
   border-radius: 3px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
-  background: #ADFF2F;
-  animation: vol .5s ease-in;
+  background: #7d7f84;
+  /* background: #ADFF2F;
+  animation: vol .5s ease-in; */
 }
-.vol_bar:hover > span::after
+/* .vol_bar:hover > span::after
 {
   content: '';
   position: absolute;
@@ -473,4 +472,4 @@ footer {
   {
   width: 25%;
   }
-}
+} */
